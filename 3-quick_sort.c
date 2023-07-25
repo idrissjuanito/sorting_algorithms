@@ -44,7 +44,7 @@ void partition_sch(int *array, size_t size, size_t low, size_t high)
  */
 void quick_sort(int *array, size_t size)
 {
-	if (size < 2)
+	if (!array || size < 2)
 		return;
 	partition_sch(array, size, 0, size);
 }
